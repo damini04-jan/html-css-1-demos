@@ -1,0 +1,71 @@
+nav {
+	background-color: lightgrey;
+}
+/*
+	Use descendant selectors to be more precise; the following rule applies to any ul
+	elements that are descendants of nav elements
+*/
+nav ul {
+	background-color: blue;
+}
+
+/*
+	We can specify any number of descendants; the following rule applies to any li
+	elements that are descendants of ul elements, which are themselves descendants
+	of nav elements (whew!)
+*/
+nav ul li {
+	background-color: green;
+	border-bottom: 1px solid #333333;
+}
+
+/*
+	And so on and so forth...
+*/
+nav ul li a {
+	background-color: yellow;
+	color: red;
+	text-decoration: none;
+}
+
+/*
+	Pseudo classes allow us to target elements in specific states, positions, etc.  In this case,
+	we are targeting a elements in the hover state (i.e. when the mouse cursor is over them)
+*/
+nav ul li a:hover {
+	color: magenta;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: blue;
+}
+
+footer h2 {
+	background-color: green;
+	color: white;
+}
+
+footer {
+	background-color: grey;
+}
+
+/*
+	Class selectors can be used to be more specific when selecting elements and have a higher priority
+	than simple element selectors alone
+*/
+
+#facebook-anchor-id {
+	background-color: blue;
+}
+
+ul.navigation a{
+	background-color: yellow;
+	color: green;
+	list-style: none;
+    padding-left: 0;
+}
+
+#my-h2 {
+	color: cyan;
+}
